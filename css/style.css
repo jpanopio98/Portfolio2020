@@ -1,0 +1,79 @@
+
+body{
+  background-color: #353333;
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: center;  
+  list-style: none;
+  margin: 0;
+  
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+li a:hover {
+  
+ 
+  transform: scale(1.1); 
+}
+li.grow {
+ transition: all .2s ease-in-out; 
+}
+
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    color: white;
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+/*IMAGE GALLERY /*
+
+.flexbox {
+  display: flex;
+  /* create a flex box rather than block, inline, grid */
+  flex-wrap: wrap;
+  /* determine wraping method */
+  justify-content: center;
+  /*justify content in the flexbox  - try using "space-between"*/
+}
+
+img {
+  margin: 10px;
+  transition: all 0.5s;
+  
+}
+
+img:hover{
+    transform: scale(1.05);
+}
