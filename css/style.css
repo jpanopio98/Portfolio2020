@@ -200,11 +200,15 @@ li.grow {
 
 /*Fade in Transition*/
 /*https://codepen.io/Drew69/pen/LRPgmL*/
+/*INCLUDED IS HOVER OVER IMAGE WITH TEXT*/
+
+
 img {
   margin: 10px;
   transition: all 0.5s;
   opacity: 1;
-  animation: fadeIn 5s ease;
+  /*animation: fadeIn 5s ease;*/
+  backface-visibility: hidden;
   
 }
 
@@ -221,6 +225,15 @@ img {
 
 img:hover{
     transform: scale(1.05);
+
+}
+
+.gallery-image{
+  transition: .5s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  opacity: .5;
 }
 
 
@@ -230,12 +243,12 @@ img:hover{
   grid-template-columns: 400px 1fr 2fr;
  /*"fr = fractional units. Uses a fraction of the available space in the container.
   You can mix fr's and other units (px/%)*/
-  grid-template-rows: 200px 200px 200px;
+ /* grid-template-rows: 200px 200px 200px;*/
   /* Remove template-rows to show implicit grid */
   /*   Once you do, image will determine height of implicit rows */
   grid-gap: 20px;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .gallery img {
@@ -244,6 +257,7 @@ img:hover{
   /*   https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
   width:  100%;
   height: 100%;
+  opacity: 2;
 }
 
 img {
