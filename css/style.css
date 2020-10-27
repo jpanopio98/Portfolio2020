@@ -61,6 +61,32 @@ li.grow {
 }
 
 
+/*Name and Page Title*/
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*DROPDOWN FEATURE FOR THE NAVIGATION*/
 /*https://www.w3schools.com/howto/howto_css_subnav.asp*/
 /* The dropdown container */
@@ -113,83 +139,9 @@ li.grow {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  padding-left: 2px;
 }
 
-
-
-
-
-
-/*Landing Page Name*/
-.intro{
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 100px;
-  color: white;
-}
-.name{
-  display: flex;
-  justify-content: center;
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  margin-top: 5px;
-   font-size: 200px;
-  position: relative;
-  display: inline;
-  animation: rev-show-main 1s ease forwards;
-}
-
-.subtitle{
-  
-  margin: 10px;
-  font-size: 30px;
-  margin-left:70px;
-  margin-bottom: 150px;
-  position: absolute;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  letter-spacing: .009em;
-
-
-}
-
-/*LANDING PAGE ANIMATIONS*/
-/*Fade In Text with Animation*/
-/*https://codepen.io/gebeto/pen/mvxOBX*/
-.name:after {
-  content: " ";
-  position: absolute;
-  animation: rev-show-block 1s ease forwards;
-  background: #5B5454;
-  left: 0%;
-  top: 0%;
-  width: 0%;
-  height: 100%;
-}
-
-@keyframes rev-show-main {
-  0% {color: transparent;}
-  49% {color: transparent;}
-  50% {color: #5B5454;}
-}
-
-/*Black box animation*/
-@keyframes rev-show-block {
-  0% {
-    left: 0%;
-    width: 0%;
-  }
-  
-  50% {
-    left: 0%;
-    width: 100%;
-  }
-  
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
 
 
 
@@ -207,7 +159,7 @@ img {
   margin: 10px;
   transition: all 0.5s;
   opacity: 1;
-  /*animation: fadeIn 5s ease;*/
+  animation: fadeIn 5s ease;
   backface-visibility: hidden;
   
 }
@@ -228,19 +180,11 @@ img:hover{
 
 }
 
-.gallery-image{
-  transition: .5s ease;
-}
-
-.gallery-item:hover .gallery-image {
-  opacity: .5;
-}
-
 
 
 .gallery {
   display: grid;
-  grid-template-columns: 400px 1fr 2fr;
+  grid-template-columns: 400px 1fr 2fr, 2fr;
  /*"fr = fractional units. Uses a fraction of the available space in the container.
   You can mix fr's and other units (px/%)*/
  /* grid-template-rows: 200px 200px 200px;*/
@@ -260,22 +204,104 @@ img:hover{
   opacity: 2;
 }
 
-img {
-/*     max-width: 100%; */
-/*     display: block; */
+
+/*JAPANSCAPES PROFILE PAGE*/
+
+#project-info{
+   text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  line-height: 1.6;
 }
 
-/*@media(min-width: 600px){
-  p{
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
-
-  img{
-    width: 50%; 
-  }
+.profile-container {
+  display: grid;
+  grid-gap: 120px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 300px 300px;
 }
-*/
+
+.profile-grid:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+
+/*CITYSCAPES PROFILE PAGE*/
+#project-info{
+   text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.profile-container {
+  display: grid;
+  grid-gap: 120px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 200px 200px;
+}
+
+.profile-grid:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+
+
+
+/*MOUNTAINSCAPES PROFILE PAGE*/
+#project-info{
+   text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.profile-container {
+  display: grid;
+  grid-gap: 120px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 200px 200px;
+}
+
+.profile-grid:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+
+/*JAPANDESIGNS PROFILE PAGE*/
+#project-info{
+   text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.profile-container {
+  display: grid;
+  grid-gap: 120px;
+  grid-template-columns: repeat(2,3fr);
+  grid-template-rows: 400px 400px;
+}
+
+.profile-grid:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
 
 
 /*ABOUT PAGE*/
@@ -284,10 +310,67 @@ img {
    text-align: center;
   font-family: 'Lato', sans-serif;
   color: white;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 200px 200px;
+}
+
+.card:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/*  Short hand
+
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+
+*/
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 
 
+/*PHOTOGRAPHY*/
+.photo-container {
+  display: grid;
+  grid-template-columns: 500px 1fr 4fr;
+ /*"fr = fractional units. Uses a fraction of the available space in the container.
+  You can mix fr's and other units (px/%)*/
+ /* grid-template-rows: 200px 200px 200px;*/
+  /* Remove template-rows to show implicit grid */
+  /*   Once you do, image will determine height of implicit rows */
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.photo-container img {
+  object-fit: cover;
+     /*Functions like a shape mask */
+  /*   https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+  width:  100%;
+  height: 100%;
+  opacity: 2;
+}
+
+
+/*LOST IN JAPAN PROFILE PAGE*/
 
 
 
@@ -295,13 +378,11 @@ img {
 
 
 
-
-
-
+/*FOOTER*/
 footer {
   font-family: 'Lato', sans-serif;
   overflow: hidden; 
-  position: absolute;
+  position:relative;
   padding: 1rem 0;
   background-color: none;
   display: flex;
