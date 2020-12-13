@@ -937,7 +937,7 @@ profile-header p {
 /* footer */
 .footer{
   text-align: center;
-  color: grey;
+  color: white;
   margin: 60px auto;
 }
 
@@ -1098,10 +1098,10 @@ profile-header p {
   background: #dd4b39;
 }
 
-.github:hover {
+.itchio:hover {
   color: #dd4b39;
 }
-.github:hover span { 
+.itchio:hover span { 
   background: #dd4b39;
 }
 .social li a .twitter {
