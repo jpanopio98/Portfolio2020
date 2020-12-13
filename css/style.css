@@ -1091,10 +1091,17 @@ profile-header p {
 .email:hover span { 
   background: #c32aa3;
 }
-.google:hover {
+.github:hover {
   color: #dd4b39;
 }
-.google:hover span { 
+.github:hover span { 
+  background: #dd4b39;
+}
+
+.github:hover {
+  color: #dd4b39;
+}
+.github:hover span { 
   background: #dd4b39;
 }
 .social li a .twitter {
