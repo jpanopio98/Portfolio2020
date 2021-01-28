@@ -923,6 +923,132 @@ profile-header p {
 
 
 
+/*PROGRAMMING PROJECTS PAGE*/
+
+/*RESCUE EVA */
+.rescueeva-info{
+
+text-align: center;
+color: white;
+margin-right: 150px;
+margin-left: 150px;
+}
+
+profile-header {
+  margin: 100px 0 200px 120px;
+  text-align: center;
+}
+
+
+
+
+profile-header p {
+  width: 60%;
+  margin-top: 10px;
+}
+
+
+
+/*p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}*/
+
+
+/* .work */
+
+.rescueeva-work {
+  text-align: center;
+  width: 100%;
+}
+
+.rescueeva-work img {
+  margin: 1%;
+  width: 25%;
+}
+
+/* header2 */
+
+.header2 {
+  margin: 130px 0 80px 40px;
+}
+
+/* .work2 */
+.work2 {
+  width: 100%;
+  text-align: center;
+}
+
+.work2 img {
+  margin: 1%;
+  width: 94%;
+}
+
+
+
+
+
+
+/*Grass Whistle*/
+.grasswhistle-info{
+
+text-align: center;
+color: white;
+margin-right: 150px;
+margin-left: 150px;
+}
+
+profile-header {
+  margin: 100px 0 200px 120px;
+  text-align: center;
+}
+
+
+
+
+profile-header p {
+  width: 60%;
+  margin-top: 10px;
+}
+
+
+
+/*p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}*/
+
+
+/* .work */
+
+.grasswhistle-work {
+  text-align: center;
+  width: 100%;
+}
+
+.grasswhistle-work img {
+  margin: 1%;
+  width: 70%;
+}
+
+/* header2 */
+
+.header2 {
+  margin: 130px 0 80px 40px;
+}
+
+/* .work2 */
+.work2 {
+  width: 100%;
+  text-align: center;
+}
+
+.work2 img {
+  margin: 1%;
+  width: 94%;
+}
 
 
 /* footer */
