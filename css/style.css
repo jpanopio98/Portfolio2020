@@ -1,14 +1,22 @@
 
 body{
-  background-color: #254384;
+  /*BACKGROUND COLOR CHANGES MADE 3/23  */
+  background-color: white;
  padding:0;
   min-height: 100vh;
   /*verflow: hidden;*/
-   font-family: 'Montserrat', sans-serif;
+  /*FONT FAMILY CHANGES MADE 3/23 */
+   font-family: 'Lato', sans-serif;
   line-height: 1.6;
   margin: 0;
   min-height: 100vh;
+  /*LATEST UPDATE MADE 3/12 */
+  zoom:73%;
+
 }
+
+
+
 
 
 
@@ -26,7 +34,7 @@ ul {
 h2,
 h3,
 a {
-  color: white;
+  color: black;
 }
 
 a {
@@ -53,12 +61,12 @@ a {
 }
 
 .main-nav a {
-  color: #F4E4E4;
-  font-size: .99em;
+  color: black;
+  font-size: 1.0em;
 }
 
 .main-nav a:hover {
-  color: #406DBF;
+  color: #982020;
 }
 
 
@@ -133,13 +141,24 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 }
 
 .title {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
   padding: 3.5rem 0;
-  color: white;
+  /* ALL TEXT CHANGED TO BLACK 3/23  */
+  color: black;
+}
+
+.sub-title {
+  font-family: "Lato",  sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height:.5;
+  text-align: center;
+  padding: .5rem 0;
+  color: black;
 }
 
 .title span {
@@ -204,13 +223,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .heading {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
   padding: 3.5rem 0;
-  color: white;
+  color: black;
 }
 
 .heading span {
@@ -278,12 +297,14 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .portfolio-resume-spacing {
   margin-bottom: 2rem;
-  text-align: center;
+  /*text-align: center;*/
+   /*FONT SIZE CHANGES MADE 3/12 */
+  font-size: 36px;
 }
 
 .portfolio-resume-wrapper {
   padding: 2rem 4rem;
-  text-align: center;
+  /*text-align: center;*/
 
 }
 
@@ -298,11 +319,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .portfolio-resume-header {
+
   text-transform: uppercase;
   padding-bottom: 1rem;
   border-bottom: 1px solid white;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
+  /*FONT SIZE CHANGES MADE 3/12 */
+  font-size: 36px;
+}
+.skillset{
   text-align: center;
 }
 
@@ -312,7 +339,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .portfolio-resume-contact-info a {
-  color:white;
+  color:black;
 text-align: center;
 
 }
@@ -321,14 +348,19 @@ text-align: center;
   font-size: 1.4rem;
   padding-right: 0.8rem;
   vertical-align: middle;
-  color: #5B5454;
+  color: black;
 text-align: center;
 }
 
 
 /* TEXT COLOR */
 p, li{
-  color: #F4E4E4;
+  font-family: "Varela",sans-serif;
+  font-size: 36px;
+  color: black;
+
+  /*FONTS SIZE CHANGED ON 3/12 */
+  font-size: 26px;
 }
 
 
@@ -339,7 +371,7 @@ p, li{
 .japanscapes-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -357,13 +389,21 @@ profile-header p {
   margin-top: 10px;
 }
 
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  /*CHANGES TO FONT SIZES FOR WORK INFO
+   MADE ON 3/12 */
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -404,7 +444,7 @@ profile-header p {
 .cityscape-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -424,11 +464,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -469,7 +509,7 @@ profile-header p {
 .mountainscape-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -489,11 +529,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -535,7 +575,7 @@ profile-header p {
 .postcard-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -555,11 +595,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -602,7 +642,7 @@ profile-header p {
 .greatwave-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -622,11 +662,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -669,7 +709,7 @@ profile-header p {
 .fate-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -689,11 +729,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -726,14 +766,15 @@ profile-header p {
 }
 
 
-/* ANIME IN REAL LIFE PROFILE PAGE*/
+/* ADDED NEW PROJECT PAGE 3/23  */
+/* PORTAL TO YOU PROFILE PAGE*/
 /* header */
 
 
-.anime-info{
+.portal-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -753,21 +794,21 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
 
-.anime-work {
+.portal-work {
   text-align: center;
   width: 100%;
 }
 
-.anime-work img {
+.portal-work img {
   margin: 1%;
   width: 70%;
 }
@@ -800,7 +841,7 @@ profile-header p {
 .japan-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -820,11 +861,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -865,7 +906,7 @@ profile-header p {
 .pearl-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -885,11 +926,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -929,7 +970,7 @@ profile-header p {
 .rescueeva-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -949,11 +990,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color: black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -994,7 +1035,7 @@ profile-header p {
 .grasswhistle-info{
 
 text-align: center;
-color: white;
+color: black;
 margin-right: 150px;
 margin-left: 150px;
 }
@@ -1014,11 +1055,11 @@ profile-header p {
 
 
 
-/*p {
-  color: #fff;
-  font-size: 16px;
+p {
+  color:black;
+  font-size: 26px;
   font-weight: 300;
-}*/
+}
 
 
 /* .work */
@@ -1054,8 +1095,9 @@ profile-header p {
 /* footer */
 .footer{
   text-align: center;
-  color: white;
+  color: black;
   margin: 60px auto;
+  font-size: 26px;
 }
 
 /* Responsiveness */
@@ -1125,7 +1167,7 @@ profile-header p {
   font-size:40px;
   text-align:center;
   text-decoration:none;
-  color:white;
+  color:black;
   margin: 0 30px;
   transition:.5s;
 }
@@ -1191,7 +1233,7 @@ profile-header p {
 }
 
 .linkedin:hover {
-  color: black;
+  color: red;
 }
 .linkedin:hover span { 
   background: #3b5998;
@@ -1230,3 +1272,5 @@ profile-header p {
 .social li a:hover:nth-child(4) {
   color: #dd4b39;
 }
+
+
