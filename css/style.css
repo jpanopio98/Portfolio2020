@@ -157,7 +157,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 
 .sub-title {
   font-family: "Lato",  sans-serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height:.5;
   text-align: center;
